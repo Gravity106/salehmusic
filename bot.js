@@ -16,7 +16,7 @@ client.on('ready', () => {
 });
 
 
-client.on("roleDelete", 'role' => {
+client.on("roleDelete", role => {
   client.setTimeout(() => {
     role.guild.fetchAuditLogs({
         limit: 1,
